@@ -1,15 +1,15 @@
 package fila;
 
-public class NoFila {
+public class NoFila<T> {
 
-    private Object object;
-    private NoFila refNo;
+    private T object;
+    private NoFila<T> refNo;
 
 
     public NoFila(){
     }
 
-    public NoFila(Object object){
+    public NoFila(T object){
         this.refNo = null;
         this.object = object;
     }
@@ -18,7 +18,7 @@ public class NoFila {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 

@@ -3,12 +3,12 @@ package fila;
 public class MainFila {
     public static void main(String[] args) {
 
-        Fila fila = new Fila();
+        Fila<String> fila = new Fila<>();
 
-        fila.enqueue(new NoFila("Primeiro"));
-        fila.enqueue(new NoFila("Segundo"));
-        fila.enqueue(new NoFila("Terceiro"));
-        fila.enqueue(new NoFila("Quarto"));
+        fila.enqueue("Primeiro");
+        fila.enqueue("Segundo");
+        fila.enqueue("Terceiro");
+        fila.enqueue("Quarto");
 
         System.out.println(fila);
 
@@ -16,7 +16,7 @@ public class MainFila {
 
         System.out.println(fila);
 
-        fila.enqueue(new NoFila("Ultimo"));
+        fila.enqueue("Ultimo");
 
         System.out.println(fila);
 
